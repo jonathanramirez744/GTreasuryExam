@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GTreasuryModelStoreContainer" CdmEntityContainer="GTreasuryEntities1">
+    <EntitySetMapping Name="tblClients">
+      <EntityTypeMapping TypeName="GTreasuryModel.tblClient">
+        <MappingFragment StoreEntitySet="tblClients">
+          <ScalarProperty Name="intClientId" ColumnName="intClientId" />
+          <ScalarProperty Name="strClientName" ColumnName="strClientName" />
+          <ScalarProperty Name="strClientMiddleName" ColumnName="strClientMiddleName" />
+          <ScalarProperty Name="strClientSurname" ColumnName="strClientSurname" />
+          <ScalarProperty Name="dtmClientBirthDate" ColumnName="dtmClientBirthDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLoans">
+      <EntityTypeMapping TypeName="GTreasuryModel.tblLoan">
+        <MappingFragment StoreEntitySet="tblLoans">
+          <ScalarProperty Name="intLoanId" ColumnName="intLoanId" />
+          <ScalarProperty Name="dblLoanAmont" ColumnName="dblLoanAmont" />
+          <ScalarProperty Name="dtmLoanStartDate" ColumnName="dtmLoanStartDate" />
+          <ScalarProperty Name="intLoanTerm" ColumnName="intLoanTerm" />
+          <ScalarProperty Name="dblLoadFixedRate" ColumnName="dblLoadFixedRate" />
+          <ScalarProperty Name="intClientId" ColumnName="intClientId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

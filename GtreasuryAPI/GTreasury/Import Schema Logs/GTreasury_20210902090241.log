@@ -1,0 +1,85 @@
+02/09/2021 5:02:41 pm	This log contains information about the import schema operation into project 'GTreasury' on computer 'LAPTOP-BH51F169' by user 'Jonathan Ramirez'.
+02/09/2021 5:02:41 pm	Import of database schema has started.
+02/09/2021 5:02:45 pm	Gathering database credentials
+02/09/2021 5:02:45 pm	Gathering database options
+02/09/2021 5:02:45 pm	Gathering generic database scoped configuration option
+02/09/2021 5:02:45 pm	Gathering users
+02/09/2021 5:02:45 pm	Gathering roles
+02/09/2021 5:02:45 pm	Gathering application roles
+02/09/2021 5:02:45 pm	Gathering role memberships
+02/09/2021 5:02:45 pm	Gathering filegroups
+02/09/2021 5:02:45 pm	Gathering full-text catalogs
+02/09/2021 5:02:45 pm	Gathering assemblies
+02/09/2021 5:02:45 pm	Gathering certificates
+02/09/2021 5:02:45 pm	Gathering asymmetric keys
+02/09/2021 5:02:45 pm	Gathering symmetric keys
+02/09/2021 5:02:45 pm	Gathering encrypted symmetric keys
+02/09/2021 5:02:45 pm	Gathering schemas
+02/09/2021 5:02:45 pm	Gathering XML schema collections
+02/09/2021 5:02:45 pm	Gathering user-defined data types
+02/09/2021 5:02:45 pm	Gathering user-defined types
+02/09/2021 5:02:45 pm	Gathering table types
+02/09/2021 5:02:45 pm	Gathering unique keys for table types
+02/09/2021 5:02:45 pm	Gathering primary keys for table types
+02/09/2021 5:02:45 pm	Gathering indexes for table types
+02/09/2021 5:02:45 pm	Gathering check constraints for table types
+02/09/2021 5:02:45 pm	Gathering default constraints for table types
+02/09/2021 5:02:45 pm	Gathering partition functions
+02/09/2021 5:02:45 pm	Gathering partition schemes
+02/09/2021 5:02:45 pm	Gathering functions
+02/09/2021 5:02:45 pm	Gathering encrypted functions
+02/09/2021 5:02:45 pm	Gathering aggregates
+02/09/2021 5:02:45 pm	Gathering procedures
+02/09/2021 5:02:45 pm	Gathering encrypted procedures
+02/09/2021 5:02:45 pm	Gathering tables
+02/09/2021 5:02:45 pm	Gathering primary keys
+02/09/2021 5:02:45 pm	Gathering unique constraints
+02/09/2021 5:02:45 pm	Gathering foreign keys
+02/09/2021 5:02:45 pm	Gathering default constraints
+02/09/2021 5:02:45 pm	Gathering check constraints
+02/09/2021 5:02:45 pm	Gathering views
+02/09/2021 5:02:45 pm	Gathering encrypted views
+02/09/2021 5:02:45 pm	Gathering indexes
+02/09/2021 5:02:45 pm	Gathering statistics
+02/09/2021 5:02:45 pm	Gathering full-text index stoplists
+02/09/2021 5:02:45 pm	Gathering search property lists
+02/09/2021 5:02:45 pm	Gathering search properties
+02/09/2021 5:02:45 pm	Gathering full-text indexes
+02/09/2021 5:02:45 pm	Gathering column store indexes
+02/09/2021 5:02:45 pm	Gathering spatial indexes
+02/09/2021 5:02:45 pm	Gathering XML indexes
+02/09/2021 5:02:45 pm	Gathering Selective XML indexes
+02/09/2021 5:02:45 pm	Gathering encrypted triggers
+02/09/2021 5:02:45 pm	Gathering triggers
+02/09/2021 5:02:45 pm	Gathering encrypted and clr ddl triggers
+02/09/2021 5:02:45 pm	Gathering ddl triggers
+02/09/2021 5:02:45 pm	Gathering synonyms
+02/09/2021 5:02:45 pm	Gathering defaults
+02/09/2021 5:02:45 pm	Gathering data constraint uddt bindings
+02/09/2021 5:02:45 pm	Gathering rules
+02/09/2021 5:02:45 pm	Gathering data constraint uddt bindings
+02/09/2021 5:02:45 pm	Gathering message types
+02/09/2021 5:02:45 pm	Gathering queues
+02/09/2021 5:02:45 pm	Gathering contracts
+02/09/2021 5:02:45 pm	Gathering services
+02/09/2021 5:02:45 pm	Gathering event notifications
+02/09/2021 5:02:45 pm	Gathering remote service bindings
+02/09/2021 5:02:45 pm	Gathering broker priorities
+02/09/2021 5:02:45 pm	Gathering signatures
+02/09/2021 5:02:45 pm	Gathering data compression options
+02/09/2021 5:02:45 pm	Gathering sequence types
+02/09/2021 5:02:45 pm	Gathering security policies
+02/09/2021 5:02:45 pm	Gather column encryption keys
+02/09/2021 5:02:45 pm	Gathering column master keys
+02/09/2021 5:02:45 pm	Gathering external data sources
+02/09/2021 5:02:45 pm	Gathering external file formats
+02/09/2021 5:02:45 pm	Gathering external tables
+02/09/2021 5:02:45 pm	Gathering extended properties
+02/09/2021 5:02:45 pm	Gathering credentials
+02/09/2021 5:02:45 pm	Gathering logins
+02/09/2021 5:02:45 pm	Gathering server audits
+02/09/2021 5:02:45 pm	Scanning project for duplicate elements
+02/09/2021 5:02:45 pm	Finished duplicate element processing
+02/09/2021 5:02:47 pm	Finished importing database.
+02/09/2021 5:02:47 pm	A summary of the import was saved to the following location: D:\01_Work\GTreasury\GTreasuryExam\GtreasuryAPI\GTreasury\Import Schema Logs\GTreasury_20210902090241.log
+02/09/2021 5:02:47 pm	Click Finish to continue...

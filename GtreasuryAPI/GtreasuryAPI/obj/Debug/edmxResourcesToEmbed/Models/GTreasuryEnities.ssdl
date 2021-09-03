@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GTreasuryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblClients">
+    <Key>
+      <PropertyRef Name="intClientId" />
+    </Key>
+    <Property Name="intClientId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="strClientName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="strClientMiddleName" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="strClientSurname" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="dtmClientBirthDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblLoans">
+    <Key>
+      <PropertyRef Name="intLoanId" />
+    </Key>
+    <Property Name="intLoanId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dblLoanAmont" Type="float" />
+    <Property Name="dtmLoanStartDate" Type="date" />
+    <Property Name="intLoanTerm" Type="int" />
+    <Property Name="dblLoadFixedRate" Type="int" />
+    <Property Name="intClientId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_tblLoans_tblClients">
+    <End Role="tblClients" Type="Self.tblClients" Multiplicity="1" />
+    <End Role="tblLoans" Type="Self.tblLoans" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblClients">
+        <PropertyRef Name="intClientId" />
+      </Principal>
+      <Dependent Role="tblLoans">
+        <PropertyRef Name="intClientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GTreasuryModelStoreContainer">
+    <EntitySet Name="tblClients" EntityType="Self.tblClients" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLoans" EntityType="Self.tblLoans" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tblLoans_tblClients" Association="Self.FK_tblLoans_tblClients">
+      <End Role="tblClients" EntitySet="tblClients" />
+      <End Role="tblLoans" EntitySet="tblLoans" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

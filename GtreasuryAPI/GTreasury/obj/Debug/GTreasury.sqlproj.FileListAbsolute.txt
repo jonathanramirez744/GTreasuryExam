@@ -1,0 +1,6 @@
+D:\01_Work\GTreasury\GTreasuryExam\GtreasuryAPI\GTreasury\bin\Debug\GTreasury.dacpac
+D:\01_Work\GTreasury\GTreasuryExam\GtreasuryAPI\GTreasury\bin\Debug\GTreasury.dll
+D:\01_Work\GTreasury\GTreasuryExam\GtreasuryAPI\GTreasury\bin\Debug\GTreasury.pdb
+D:\01_Work\GTreasury\GTreasuryExam\GtreasuryAPI\GTreasury\obj\Debug\GTreasury.sqlproj.AssemblyReference.cache
+D:\01_Work\GTreasury\GTreasuryExam\GtreasuryAPI\GTreasury\obj\Debug\GTreasury.dll
+D:\01_Work\GTreasury\GTreasuryExam\GtreasuryAPI\GTreasury\obj\Debug\GTreasury.pdb

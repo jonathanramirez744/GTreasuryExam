@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GTreasuryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblClient">
+    <Key>
+      <PropertyRef Name="intClientId" />
+    </Key>
+    <Property Name="intClientId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="strClientName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="strClientMiddleName" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="strClientSurname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="dtmClientBirthDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblLoans" Relationship="Self.FK_tblLoans_tblClients" FromRole="tblClients" ToRole="tblLoans" />
+  </EntityType>
+  <EntityType Name="tblLoan">
+    <Key>
+      <PropertyRef Name="intLoanId" />
+    </Key>
+    <Property Name="intLoanId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dblLoanAmont" Type="Double" />
+    <Property Name="dtmLoanStartDate" Type="DateTime" Precision="0" />
+    <Property Name="intLoanTerm" Type="Int32" />
+    <Property Name="dblLoadFixedRate" Type="Int32" />
+    <Property Name="intClientId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblClient" Relationship="Self.FK_tblLoans_tblClients" FromRole="tblLoans" ToRole="tblClients" />
+  </EntityType>
+  <Association Name="FK_tblLoans_tblClients">
+    <End Role="tblClients" Type="Self.tblClient" Multiplicity="1" />
+    <End Role="tblLoans" Type="Self.tblLoan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblClients">
+        <PropertyRef Name="intClientId" />
+      </Principal>
+      <Dependent Role="tblLoans">
+        <PropertyRef Name="intClientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GTreasuryEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblClients" EntityType="Self.tblClient" />
+    <EntitySet Name="tblLoans" EntityType="Self.tblLoan" />
+    <AssociationSet Name="FK_tblLoans_tblClients" Association="Self.FK_tblLoans_tblClients">
+      <End Role="tblClients" EntitySet="tblClients" />
+      <End Role="tblLoans" EntitySet="tblLoans" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
